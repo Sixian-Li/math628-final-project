@@ -15,7 +15,6 @@ The report is [reports/final_report.pdf](reports/final_report.pdf). Its LaTeX so
 | `reports/final_report.pdf` | The report |
 | `reports/latex/` | `main.tex`, the table fragments in `tables/` and the figures in `figures/` |
 | `reports/exhibits/` | Small series behind Figures 1 to 5, Table 9 and the PLTR example |
-| `reports/slides/math628_presentation.pptx` | The presentation slides |
 | `proposal/proposal_en_1009.pdf` | The project proposal. It specifies the first design (Section 5 of the report); Appendix D of the report lists what changed since |
 | `scripts/` | One script per experiment, plus three `make_report_*.py` scripts that build the exhibits, figures and tables |
 | `src/ml_filter/` | Shared code (see below) |
