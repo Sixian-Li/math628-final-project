@@ -1,0 +1,87 @@
+=========== Screen 1: stock ranking inside SMA20/140 candidates, DEV 2005-2018, 5 bps
+                             rule  cagr  sharpe  maxdd  turn  names  plc_pct
+                S0 all candidates  9.78    0.62 -48.59  8.36  62.29      NaN
+  random20 every1w (median of 60)  6.53     NaN    NaN   NaN    NaN      NaN
+  random20 every4w (median of 60)  9.62     NaN    NaN   NaN    NaN      NaN
+            mom12_1 top20 every1w 14.23    0.76 -47.66 13.50  19.51   100.00
+            mom12_1 top20 every4w 13.27    0.71 -44.25 10.62  18.40    98.33
+      mom12_1 top20 every4w buf40 12.96    0.70 -43.21  8.28  18.30    98.33
+             mom6_1 top20 every1w 13.37    0.72 -48.77 18.28  19.52   100.00
+             mom6_1 top20 every4w 12.87    0.70 -47.81 11.98  18.70    98.33
+       mom6_1 top20 every4w buf40 11.27    0.62 -48.78  8.70  18.45    86.67
+            mom12_0 top20 every1w 14.42    0.77 -46.79 12.78  19.51   100.00
+            mom12_0 top20 every4w 14.60    0.77 -43.47  9.46  18.75   100.00
+      mom12_0 top20 every4w buf40 12.79    0.70 -45.39  7.61  18.48    98.33
+               hi52 top20 every1w  8.87    0.59 -42.13 32.00  19.52    98.33
+               hi52 top20 every4w 11.48    0.73 -37.74 14.54  19.17    90.00
+         hi52 top20 every4w buf40 12.45    0.76 -36.05  8.84  18.96    98.33
+      ret20(old F1) top20 every1w 10.33    0.63 -49.73 34.99  19.52   100.00
+      ret20(old F1) top20 every4w  9.42    0.57 -47.89 20.09  19.12    46.67
+ret20(old F1) top20 every4w buf40 10.67    0.62 -47.44 13.23  19.09    80.00
+             lowvol top20 every1w 10.69    0.74 -43.24 24.27  19.52   100.00
+             lowvol top20 every4w 11.29    0.79 -41.72 16.81  18.28    86.67
+       lowvol top20 every4w buf40 10.26    0.72 -40.18 10.77  18.27    71.67
+            highvol top20 every1w  9.15    0.52 -53.05 25.77  19.52   100.00
+            highvol top20 every4w  9.75    0.53 -52.75 18.97  17.86    53.33
+      highvol top20 every4w buf40 10.34    0.56 -51.96 12.67  17.96    73.33
+         reversal4w top20 every1w  8.88    0.54 -44.95 39.02  19.52    98.33
+         reversal4w top20 every4w 10.98    0.65 -41.32 27.48  16.58    85.00
+   reversal4w top20 every4w buf40  9.87    0.61 -44.13 22.70  16.51    58.33
+
+=========== Screen 2: QQQ fast/slow states (fast SMA20/60, slow SMA20/140), weekly open-to-open R
+DEV 2000-2018
+                                 weeks  mean_bps  sd_bps  up_pct  ann_ret_pct     t
+state                                                                              
+Bear (both down)                   238    -14.56  499.26   51.68        -7.30 -0.45
+Bull (both up)                     577     14.00  284.00   55.46         7.55  1.18
+Correction (slow up, fast down)    121     39.19  280.74   58.68        22.55  1.54
+Rebound (fast up, slow down)        56     55.84  417.99   57.14        33.58  1.00
+
+=========== Screen 3: new-information features vs forward QQQ return, base-on weeks (SMA20>SMA140), DEV 2000-2018
+base-on weeks: 698, mean R1 = 18.4 bps
+        feature   n  spearman_R1  spearman_R4  R1_bps_lo  R1_bps_mid  R1_bps_hi
+            vix 698        0.035        0.106      8.467      15.824     30.839
+      vix_chg4w 698        0.006        0.042     17.831       7.144     30.087
+     vix_rel_1y 689        0.023        0.001     19.958       6.397     21.881
+            vrp 698        0.053        0.085     14.061      -2.132     43.093
+         rv_qqq 698        0.011        0.059      7.255      26.412     21.478
+     breadth140 698        0.024        0.034      5.675      13.196     36.958
+      breadth50 698       -0.049       -0.061     37.243      13.779      3.678
+     breadth200 698        0.029        0.041      5.024      21.294     28.805
+     dispersion 698       -0.060       -0.098     35.372      21.318     -1.567
+  avg_stock_vol 698       -0.009        0.024     22.167       7.180     25.714
+  newhigh_share 698       -0.040       -0.088     29.899      13.677     10.596
+breadth50_chg4w 698       -0.001       -0.059     29.718      -1.340     26.232
+     corr_proxy 698        0.055        0.106     10.308      -9.404     54.087
+
+sign stability of spearman_R4 across sub-periods (base-on weeks)
+        feature  2000-2006  2007-2012  2013-2018
+            vix      0.128      0.173      0.061
+      vix_chg4w      0.150     -0.106      0.119
+     vix_rel_1y     -0.014     -0.066      0.073
+            vrp      0.017      0.215      0.016
+         rv_qqq      0.059      0.057      0.086
+     breadth140      0.041      0.034      0.013
+      breadth50      0.001      0.012     -0.208
+     breadth200      0.039      0.054     -0.049
+     dispersion     -0.054     -0.118     -0.064
+  avg_stock_vol      0.046      0.030      0.074
+  newhigh_share     -0.013     -0.097     -0.195
+breadth50_chg4w     -0.083      0.033     -0.148
+     corr_proxy      0.190      0.090      0.071
+
+=========== Screen 4: QQQ holding CAGR on DEV 2005-2018 (5 bps), base = SMA20/140
+                          rule  cagr  holding_cagr  maxdd  sharpe  exposure  trades_py
+                      buy_hold 11.03         11.04 -53.40    0.62    100.00       0.14
+                   base 20/140  7.85         10.06 -32.93    0.59     78.93       2.00
+                      SMA20/60  4.65          6.80 -29.34    0.40     69.14       4.43
+    union (slow up OR fast up)  8.67         10.55 -32.13    0.62     83.02       2.43
+base & VIX >= expanding median  3.48         15.99 -30.53    0.37     23.11       5.86
+   base & VIX >= expanding 33%  5.10         13.93 -32.93    0.46     38.19       6.43
+ base & corr_proxy >= exp. 33%  5.01         11.01 -27.91    0.45     46.88       8.86
+  base & breadth50 <= exp. 67%  4.61          8.70 -30.15    0.41     54.12       7.72
+      base & Ridge(R4) top 2/3  6.45         11.68 -26.08    0.54     56.64       6.15
+      base & Ridge(R4) top 1/2  4.41         10.38 -30.59    0.41     43.73       7.00
+      base & GBreg(R4) top 2/3  6.60          9.74 -27.35    0.53     68.85       4.00
+     union & Ridge(R4) top 2/3  7.09         12.31 -29.86    0.56     59.09       8.01
+     union & GBreg(R4) top 2/3  8.89         12.73 -29.86    0.65     71.15       5.00

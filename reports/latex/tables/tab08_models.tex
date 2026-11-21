@@ -1,0 +1,20 @@
+\begin{tabular}{lrrrrrr}
+\toprule
+ & & \multicolumn{2}{c}{2005--2018} & \multicolumn{2}{c}{2019--2025} & Both periods \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-7}
+Model & Configurations & Mean change & Beats the & Mean change & Beats the & Beats the \\
+ & & (pp) & rule (\%) & (pp) & rule (\%) & rule (\%) \\
+\midrule
+Ridge, $\alpha$ = 100 & 15 & $+$4.4 & 100 & $+$7.5 & 100 & 100 \\
+Lasso & 15 & $+$4.4 & 100 & $+$9.0 & 93 & 93 \\
+Ridge, $\alpha$ = 10 (reference) & 15 & $+$4.0 & 80 & $+$7.6 & 93 & 73 \\
+\addlinespace
+Logistic, weighted by the size of the return & 15 & $+$1.2 & 73 & $+$5.1 & 87 & 67 \\
+Random forest & 15 & $+$0.8 & 80 & $+$3.0 & 73 & 60 \\
+Gradient boosting, depth 1 & 15 & $+$0.2 & 53 & $-$0.3 & 47 & 40 \\
+Logistic (direction) & 15 & $+$1.8 & 80 & $-$0.3 & 47 & 33 \\
+Support vector regression & 15 & $+$0.5 & 53 & $+$2.7 & 73 & 33 \\
+Gradient boosting, depth 2 & 15 & $-$2.1 & 13 & $-$0.7 & 20 & 0 \\
+K nearest neighbours & 15 & $-$5.2 & 0 & $-$7.1 & 0 & 0 \\
+\bottomrule
+\end{tabular}

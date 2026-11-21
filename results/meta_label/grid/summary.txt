@@ -1,0 +1,18 @@
+2005-2025 -     hivol: ML>S0 in 53% of pairs, ML>placebo median in 66%; mean ML−placebo +0.19 pp (weak half of S0 +0.03, strong half +0.34); median AUC nan; corr(S0 CAGR, ML−placebo) +0.46
+2005-2025 cap26 gb   : ML>S0 in 21% of pairs, ML>placebo median in 28%; mean ML−placebo -0.48 pp (weak half of S0 -0.38, strong half -0.58); median AUC 0.484; corr(S0 CAGR, ML−placebo) -0.14
+2005-2025 cap26 gb_inv: ML>S0 in 31% of pairs, ML>placebo median in 47%; mean ML−placebo -0.21 pp (weak half of S0 -0.56, strong half +0.14); median AUC 0.484; corr(S0 CAGR, ML−placebo) +0.24
+2005-2025 cap26 logit: ML>S0 in 20% of pairs, ML>placebo median in 26%; mean ML−placebo -0.51 pp (weak half of S0 -0.40, strong half -0.63); median AUC 0.499; corr(S0 CAGR, ML−placebo) -0.28
+2005-2025 cap26 logit_inv: ML>S0 in 12% of pairs, ML>placebo median in 26%; mean ML−placebo -0.89 pp (weak half of S0 -1.17, strong half -0.61); median AUC 0.499; corr(S0 CAGR, ML−placebo) +0.25
+2005-2025 win   gb   : ML>S0 in 29% of pairs, ML>placebo median in 36%; mean ML−placebo -0.38 pp (weak half of S0 -0.19, strong half -0.57); median AUC 0.472; corr(S0 CAGR, ML−placebo) -0.14
+2005-2025 win   gb_inv: ML>S0 in 39% of pairs, ML>placebo median in 52%; mean ML−placebo +0.08 pp (weak half of S0 -0.46, strong half +0.61); median AUC 0.472; corr(S0 CAGR, ML−placebo) +0.35
+2005-2025 win   logit: ML>S0 in 20% of pairs, ML>placebo median in 29%; mean ML−placebo -0.52 pp (weak half of S0 -0.37, strong half -0.67); median AUC 0.485; corr(S0 CAGR, ML−placebo) -0.30
+2005-2025 win   logit_inv: ML>S0 in 19% of pairs, ML>placebo median in 33%; mean ML−placebo -0.72 pp (weak half of S0 -1.08, strong half -0.35); median AUC 0.485; corr(S0 CAGR, ML−placebo) +0.31
+2019-2025 -     hivol: ML>S0 in 74% of pairs, ML>placebo median in 82%; mean ML−placebo +1.60 pp (weak half of S0 +0.87, strong half +2.33); median AUC nan; corr(S0 CAGR, ML−placebo) +0.59
+2019-2025 cap26 gb   : ML>S0 in 33% of pairs, ML>placebo median in 44%; mean ML−placebo -0.27 pp (weak half of S0 +0.12, strong half -0.67); median AUC 0.491; corr(S0 CAGR, ML−placebo) -0.16
+2019-2025 cap26 gb_inv: ML>S0 in 27% of pairs, ML>placebo median in 34%; mean ML−placebo -1.07 pp (weak half of S0 -1.88, strong half -0.25); median AUC 0.491; corr(S0 CAGR, ML−placebo) +0.29
+2019-2025 cap26 logit: ML>S0 in 16% of pairs, ML>placebo median in 27%; mean ML−placebo -1.21 pp (weak half of S0 -0.53, strong half -1.89); median AUC 0.486; corr(S0 CAGR, ML−placebo) -0.44
+2019-2025 cap26 logit_inv: ML>S0 in 28% of pairs, ML>placebo median in 46%; mean ML−placebo -0.46 pp (weak half of S0 -1.36, strong half +0.46); median AUC 0.486; corr(S0 CAGR, ML−placebo) +0.40
+2019-2025 win   gb   : ML>S0 in 41% of pairs, ML>placebo median in 51%; mean ML−placebo +0.09 pp (weak half of S0 +0.31, strong half -0.14); median AUC 0.485; corr(S0 CAGR, ML−placebo) -0.04
+2019-2025 win   gb_inv: ML>S0 in 19% of pairs, ML>placebo median in 32%; mean ML−placebo -1.67 pp (weak half of S0 -2.30, strong half -1.04); median AUC 0.485; corr(S0 CAGR, ML−placebo) +0.17
+2019-2025 win   logit: ML>S0 in 14% of pairs, ML>placebo median in 26%; mean ML−placebo -1.24 pp (weak half of S0 -0.62, strong half -1.86); median AUC 0.463; corr(S0 CAGR, ML−placebo) -0.39
+2019-2025 win   logit_inv: ML>S0 in 33% of pairs, ML>placebo median in 49%; mean ML−placebo -0.41 pp (weak half of S0 -1.37, strong half +0.55); median AUC 0.463; corr(S0 CAGR, ML−placebo) +0.43
