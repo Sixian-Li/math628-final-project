@@ -20,7 +20,7 @@ The report is [reports/final_report.pdf](reports/final_report.pdf). Its LaTeX so
 | `scripts/` | One script per experiment, plus three `make_report_*.py` scripts that build the exhibits, figures and tables |
 | `src/ml_filter/` | Shared code (see below) |
 | `results/` | The outputs the report uses |
-| `data/` | The data snapshot; sources and licence in [data/README.md](data/README.md) |
+| `data/` | The data snapshot; sources in [data/README.md](data/README.md) |
 
 Modules in `src/ml_filter/`:
 
@@ -118,6 +118,6 @@ The scripts write more than the report uses: per-run CSV files, equity curves an
 
 A rerun in the environment above reproduces the kept files byte for byte. One row is the exception: the random-forest row of `results/cases/QQQ_SMA20_140/prediction_metrics.csv` can differ in the last digits of the 17 printed (a relative difference of about 1e-13 between two runs). The forest averages its trees on several cores, so the order of the floating-point sums is not fixed. The table fragments in `reports/latex/tables/` are not affected.
 
-## Data and licence
+## Data
 
-The data was purchased by the repository owner from a commercial vendor and is included so that the results can be checked. It is for grading only: please keep this repository private and do not redistribute the data. Sources, file contents and known quality limits are in [data/README.md](data/README.md).
+The data was purchased by the repository owner from a commercial vendor and is included so that the results can be checked. Sources, file contents and known quality limits are in [data/README.md](data/README.md).

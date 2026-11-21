@@ -1,6 +1,6 @@
 # Data
 
-Everything the code reads is in this folder. The data was purchased by the repository owner from a commercial vendor (Rethink; packages dated 2026-08-05). It is included for grading only: please keep the repository private and do not redistribute the files.
+Everything the code reads is in this folder. The data was purchased by the repository owner from a commercial vendor (Rethink; packages dated 2026-08-05). It is included so that the results can be reproduced.
 
 All prices are split- and dividend-adjusted by the vendor, so they approximate total return; dividends are not added again. The sample used in the report is 2000–2025. Bars from 1999 initialize the moving averages, and 2026 bars are never used to complete a label.
 
@@ -29,7 +29,7 @@ These four files are the vendor's bars with the columns renamed to `date, symbol
 - **Membership.** A stock counts as a member on a decision date if an interval in `membership_intervals.csv` covers the session before that date.
 - **Identity.** Securities are identified by source file. No predecessor or successor is merged.
 - **Delisting.** A holding with no later quote is settled at its last known close.
-- **Quality.** The audit found no blocking issue. It lists 742 close-to-close moves flagged as outliers and some early dates with fewer than 100 members. No flagged value was removed or winsorized. In the audit, `pending_review` and `approved` are the stages of the owner's own review of purchased data; the package is still at `pending_review`, which is why the report calls it a vendor candidate and asks for the stock results to be read as indicative.
+- **Quality.** The audit found no blocking issue. It lists 742 close-to-close moves flagged as outliers and some early dates with fewer than 100 members. No flagged value was removed or winsorized. The audit marks the package as a candidate pending review, which is why the report calls it a vendor candidate and asks for the stock results to be read as indicative.
 
 ## Market-state series
 
